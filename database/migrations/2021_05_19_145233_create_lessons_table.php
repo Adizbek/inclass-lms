@@ -11,7 +11,7 @@ class CreateLessonsTable extends Migration
         Schema::create('lessons', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-            $table->string('name');
+            $table->string('name')->unique();
 
             $table->timestamps();
             $table->softDeletes();

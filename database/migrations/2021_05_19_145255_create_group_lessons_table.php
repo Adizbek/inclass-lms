@@ -14,6 +14,8 @@ class CreateGroupLessonsTable extends Migration
             $table->unsignedBigInteger('group_id');
             $table->unsignedBigInteger('lesson_id');
 
+            $table->unique(['group_id', 'lesson_id']);
+
             $table->timestamps();
         });
     }

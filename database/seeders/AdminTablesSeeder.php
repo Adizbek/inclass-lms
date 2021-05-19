@@ -81,6 +81,14 @@ class AdminTablesSeeder extends Seeder
                     "permission" => NULL,
                     "title" => "Groups",
                     "uri" => "/groups"
+                ],
+                [
+                    "icon" => "fa-book",
+                    "order" => 9,
+                    "parent_id" => 0,
+                    "permission" => NULL,
+                    "title" => "Lessons",
+                    "uri" => "lessons"
                 ]
             ]
         );
@@ -141,6 +149,10 @@ class AdminTablesSeeder extends Seeder
                 ],
                 [
                     "menu_id" => 8,
+                    "role_id" => 1
+                ],
+                [
+                    "menu_id" => 9,
                     "role_id" => 1
                 ]
             ]
